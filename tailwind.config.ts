@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sans': ['Poppins', 'system-ui', 'sans-serif'],
+				'nepali': ['Noto Sans Devanagari', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +66,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Nepal flag colors
+				'nepal-red': '#DC143C',
+				'nepal-blue': '#003893',
+				'nepal-white': '#FFFFFF',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
